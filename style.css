@@ -1,0 +1,210 @@
+body{
+    background-image: linear-gradient(blue,yellow,red,green,violet,orange);
+}
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/NUZVID-IIIT.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+nav img{
+    width:150px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:5px 8px;
+    position:relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size:13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#f44336;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+}
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    border:1px solid #fff;
+   padding:12px 34px;
+   font-size:13px;
+   background:transparent;
+   position:relative;
+   cursor:pointer;
+}
+.btn:hover{
+    border: 1px solid #f44336;
+    background:#f44336;
+    transition:1s;
+}
+@media(max-width:70px){
+    .text-box h1{
+        font-size:20px;
+        display:block;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position:absolute;
+        background:#f44366;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align:left;
+        z-index:2;
+    }
+}
+.course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:5px;
+}
+.h1{
+    font-size:36px;
+    font-weight:600;
+}
+p{
+    color:#777;
+    font-size:14px;
+    font-weight:300px;
+    line-height:22px;
+    padding:10px;
+}
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis:31%;
+    background:orchid;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.5s;
+    
+}
+h3{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+.campus{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:20px;
+}
+.campus-col{
+    width:100%;
+    text-align:center;
+}
+.campus-col{
+    
+    background:orchid;
+    border-radius:10px;
+    margin-top:0%;
+    padding:50px 20px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+.campus-col:hover{
+    background:rgba(226,0,0,0.7)
+
+}
+h1{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+}
+.facilities{
+    width:50%;
+    margin:auto;
+    text-align:left;
+    padding-top:20px;
+}
+.facilities-col{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:left;
+}
+.facilities-col img{
+    border-radius:10px;
+}
+.facilities-col p{
+    padding:0;
+}
+.facilities-col h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align:center;
+}
+.testimonials{
+    width:80%;
+    margin:auto;
+    padding-top:0px;
+}
+.testimonial-col{
+    padding:50px 20px;
+     border-radius:10px;
+     margin-bottom:5%;
+     text-align:left;
+     background:pink;
+     
+}
+.testimonial-col img{
+    height:150px;
+}
+    
+
